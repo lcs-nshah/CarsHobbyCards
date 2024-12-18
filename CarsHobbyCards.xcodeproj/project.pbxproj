@@ -6,17 +6,28 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		23F2CF762D13317700701B16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23F2CF712D13317700701B16 /* Assets.xcassets */; };
+		23F2CF772D13317700701B16 /* CarsHobbyCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F2CF722D13317700701B16 /* CarsHobbyCardsApp.swift */; };
+		23F2CF782D13317700701B16 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F2CF732D13317700701B16 /* CardsView.swift */; };
+		23F2CF832D13320100701B16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23F2CF802D13320100701B16 /* Preview Assets.xcassets */; };
+		23F2CF892D13332900701B16 /* CardLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F2CF882D13332900701B16 /* CardLayoutView.swift */; };
+		23F2CF8B2D13335700701B16 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F2CF8A2D13335700701B16 /* Card.swift */; };
+		23F2CF902D13342700701B16 /* Trapezoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F2CF8D2D13342700701B16 /* Trapezoid.swift */; };
+		23F2CF912D13342700701B16 /* Triquetra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F2CF8E2D13342700701B16 /* Triquetra.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		23F2CF5E2D13316500701B16 /* CarsHobbyCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarsHobbyCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F2CF712D13317700701B16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23F2CF722D13317700701B16 /* CarsHobbyCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsHobbyCardsApp.swift; sourceTree = "<group>"; };
+		23F2CF732D13317700701B16 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
+		23F2CF802D13320100701B16 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		23F2CF882D13332900701B16 /* CardLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLayoutView.swift; sourceTree = "<group>"; };
+		23F2CF8A2D13335700701B16 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		23F2CF8D2D13342700701B16 /* Trapezoid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trapezoid.swift; sourceTree = "<group>"; };
+		23F2CF8E2D13342700701B16 /* Triquetra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triquetra.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		23F2CF602D13316500701B16 /* CarsHobbyCards */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CarsHobbyCards;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		23F2CF5B2D13316500701B16 /* Frameworks */ = {
@@ -32,7 +43,7 @@
 		23F2CF552D13316500701B16 = {
 			isa = PBXGroup;
 			children = (
-				23F2CF602D13316500701B16 /* CarsHobbyCards */,
+				23F2CF742D13317700701B16 /* CarsHobbyCards */,
 				23F2CF5F2D13316500701B16 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +54,53 @@
 				23F2CF5E2D13316500701B16 /* CarsHobbyCards.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		23F2CF742D13317700701B16 /* CarsHobbyCards */ = {
+			isa = PBXGroup;
+			children = (
+				23F2CF722D13317700701B16 /* CarsHobbyCardsApp.swift */,
+				23F2CF8F2D13342700701B16 /* Shapes */,
+				23F2CF7F2D1331FF00701B16 /* Model */,
+				23F2CF822D13320100701B16 /* Views */,
+				23F2CF812D13320100701B16 /* Preview Content */,
+				23F2CF712D13317700701B16 /* Assets.xcassets */,
+			);
+			path = CarsHobbyCards;
+			sourceTree = "<group>";
+		};
+		23F2CF7F2D1331FF00701B16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				23F2CF8A2D13335700701B16 /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		23F2CF812D13320100701B16 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				23F2CF802D13320100701B16 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		23F2CF822D13320100701B16 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				23F2CF732D13317700701B16 /* CardsView.swift */,
+				23F2CF882D13332900701B16 /* CardLayoutView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		23F2CF8F2D13342700701B16 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				23F2CF8D2D13342700701B16 /* Trapezoid.swift */,
+				23F2CF8E2D13342700701B16 /* Triquetra.swift */,
+			);
+			path = Shapes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +117,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				23F2CF602D13316500701B16 /* CarsHobbyCards */,
 			);
 			name = CarsHobbyCards;
 			packageProductDependencies = (
@@ -109,6 +164,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23F2CF832D13320100701B16 /* Preview Assets.xcassets in Resources */,
+				23F2CF762D13317700701B16 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +176,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23F2CF772D13317700701B16 /* CarsHobbyCardsApp.swift in Sources */,
+				23F2CF902D13342700701B16 /* Trapezoid.swift in Sources */,
+				23F2CF912D13342700701B16 /* Triquetra.swift in Sources */,
+				23F2CF8B2D13335700701B16 /* Card.swift in Sources */,
+				23F2CF782D13317700701B16 /* CardsView.swift in Sources */,
+				23F2CF892D13332900701B16 /* CardLayoutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
