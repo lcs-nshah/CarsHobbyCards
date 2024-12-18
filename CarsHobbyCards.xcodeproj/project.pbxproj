@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		23F2CF762D13317700701B16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23F2CF712D13317700701B16 /* Assets.xcassets */; };
 		23F2CF772D13317700701B16 /* CarsHobbyCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F2CF722D13317700701B16 /* CarsHobbyCardsApp.swift */; };
-		23F2CF782D13317700701B16 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F2CF732D13317700701B16 /* CardsView.swift */; };
+		23F2CF782D13317700701B16 /* CardTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F2CF732D13317700701B16 /* CardTabView.swift */; };
 		23F2CF832D13320100701B16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23F2CF802D13320100701B16 /* Preview Assets.xcassets */; };
 		23F2CF892D13332900701B16 /* CardLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F2CF882D13332900701B16 /* CardLayoutView.swift */; };
 		23F2CF8B2D13335700701B16 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F2CF8A2D13335700701B16 /* Card.swift */; };
@@ -21,7 +21,7 @@
 		23F2CF5E2D13316500701B16 /* CarsHobbyCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarsHobbyCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F2CF712D13317700701B16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23F2CF722D13317700701B16 /* CarsHobbyCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsHobbyCardsApp.swift; sourceTree = "<group>"; };
-		23F2CF732D13317700701B16 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
+		23F2CF732D13317700701B16 /* CardTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTabView.swift; sourceTree = "<group>"; };
 		23F2CF802D13320100701B16 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		23F2CF882D13332900701B16 /* CardLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLayoutView.swift; sourceTree = "<group>"; };
 		23F2CF8A2D13335700701B16 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 		23F2CF822D13320100701B16 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				23F2CF732D13317700701B16 /* CardsView.swift */,
+				23F2CF732D13317700701B16 /* CardTabView.swift */,
 				23F2CF882D13332900701B16 /* CardLayoutView.swift */,
 			);
 			path = Views;
@@ -180,7 +180,7 @@
 				23F2CF902D13342700701B16 /* Trapezoid.swift in Sources */,
 				23F2CF912D13342700701B16 /* Triquetra.swift in Sources */,
 				23F2CF8B2D13335700701B16 /* Card.swift in Sources */,
-				23F2CF782D13317700701B16 /* CardsView.swift in Sources */,
+				23F2CF782D13317700701B16 /* CardTabView.swift in Sources */,
 				23F2CF892D13332900701B16 /* CardLayoutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

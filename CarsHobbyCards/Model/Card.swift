@@ -5,14 +5,18 @@
 //  Created by Neil Shah on 2024-12-18.
 //
 
-import SwiftUI
+import Foundation
 
-struct Card: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+struct Card: Identifiable {
+    let id = UUID()
+    let name: String
+    
 }
 
-#Preview {
-    Card()
-}
+// Create instances of the structure
+let porsche = Card(name: "porsche")
+
+// Array
+let cards = [
+    porsche
+]

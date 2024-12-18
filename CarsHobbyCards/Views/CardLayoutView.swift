@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct CardLayoutView: View {
+    
+    // MARK: Stored Property
+    let cardToShow: Card
+    
+    // MARK: Computed Property
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Text(cardToShow.name)
+        }
     }
 }
 
 #Preview {
-    CardLayoutView()
+    CardLayoutView(cardToShow: porsche)
 }
