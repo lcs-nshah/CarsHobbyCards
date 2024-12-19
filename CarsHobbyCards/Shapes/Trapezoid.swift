@@ -23,8 +23,6 @@ struct Trapezoid: Shape {
         path.addLine(to: CGPoint(x: rect.maxX * 2 / 11, y: rect.maxY))
         path.addLine(to: CGPoint(x: rect.minX, y: rect.maxY))
         
-        
-        
         return path
     }
 }
