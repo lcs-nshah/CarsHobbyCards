@@ -24,9 +24,16 @@ struct Card: Identifiable {
 }
 
 // Create instances of the structure
-let porsche = Card(carName: "porshe", badge: "", carPhoto: "", engine: "", horsepower: "", weight: "", accelerationTime: "", topSpeed: "", price: "", numberCreated: "", productionYears: "")
+let porsche = Card(carName: "porsche", badge: "", carPhoto: "", engine: "", horsepower: "", weight: "", accelerationTime: "", topSpeed: "", price: "", numberCreated: "", productionYears: "")
+
+let mclaren = Card(carName: "mclaren", badge: "", carPhoto: "", engine: "", horsepower: "", weight: "", accelerationTime: "", topSpeed: "", price: "", numberCreated: "", productionYears: "")
+
+let ferrari = Card(carName: "ferrari", badge: "", carPhoto: "", engine: "", horsepower: "", weight: "", accelerationTime: "", topSpeed: "", price: "", numberCreated: "", productionYears: "")
+
 
 // Array
 let cards = [
-    porsche
+    porsche,
+    mclaren,
+    ferrari
 ]
