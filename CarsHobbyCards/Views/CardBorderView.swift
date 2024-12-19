@@ -1,18 +1,13 @@
 //
-//  CardLayoutView.swift
+//  CardBorderView.swift
 //  CarsHobbyCards
 //
-//  Created by Neil Shah on 2024-12-18.
+//  Created by Neil Shah on 2024-12-19.
 //
 
 import SwiftUI
 
-struct CardLayoutView: View {
-    
-    // MARK: Stored Property
-    let cardToShow: Card
-    
-    // MARK: Computed Property
+struct CardBorderView: View {
     var body: some View {
         ZStack {
             Trapezoid()
@@ -30,8 +25,7 @@ struct CardLayoutView: View {
                     .aspectRatio(1.0/1.0, contentMode: .fit)
                     .border(Color.blue)
                     .padding()
-                    
-                Image(cardToShow.badge)
+                    .position(x: 0, y: 0)
                 
                 Triquetra()
                     .stroke(
@@ -45,18 +39,11 @@ struct CardLayoutView: View {
                     .fill(Color.clear)
                     .aspectRatio(1.0/1.0, contentMode: .fit)
                     .padding()
-                
             }
-            
-            
-            
-            
-            Text(cardToShow.carName)
         }
-        .ignoresSafeArea()
     }
 }
 
 #Preview {
-    CardLayoutView(cardToShow: porsche)
+    CardTabView()
 }

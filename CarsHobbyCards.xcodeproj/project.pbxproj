@@ -15,6 +15,7 @@
 		23F2CF8B2D13335700701B16 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F2CF8A2D13335700701B16 /* Card.swift */; };
 		23F2CF902D13342700701B16 /* Trapezoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F2CF8D2D13342700701B16 /* Trapezoid.swift */; };
 		23F2CF912D13342700701B16 /* Triquetra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F2CF8E2D13342700701B16 /* Triquetra.swift */; };
+		23F2CFC72D13EA0000701B16 /* CardBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F2CFC62D13EA0000701B16 /* CardBorderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		23F2CF8A2D13335700701B16 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		23F2CF8D2D13342700701B16 /* Trapezoid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trapezoid.swift; sourceTree = "<group>"; };
 		23F2CF8E2D13342700701B16 /* Triquetra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triquetra.swift; sourceTree = "<group>"; };
+		23F2CFC62D13EA0000701B16 /* CardBorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBorderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			children = (
 				23F2CF732D13317700701B16 /* CardTabView.swift */,
 				23F2CF882D13332900701B16 /* CardLayoutView.swift */,
+				23F2CFC62D13EA0000701B16 /* CardBorderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				23F2CF902D13342700701B16 /* Trapezoid.swift in Sources */,
 				23F2CF912D13342700701B16 /* Triquetra.swift in Sources */,
 				23F2CF8B2D13335700701B16 /* Card.swift in Sources */,
+				23F2CFC72D13EA0000701B16 /* CardBorderView.swift in Sources */,
 				23F2CF782D13317700701B16 /* CardTabView.swift in Sources */,
 				23F2CF892D13332900701B16 /* CardLayoutView.swift in Sources */,
 			);

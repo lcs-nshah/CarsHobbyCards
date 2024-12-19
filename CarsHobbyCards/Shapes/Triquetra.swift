@@ -13,22 +13,22 @@ struct Triquetra: Shape {
         
         // Define the shape
         path.addRelativeArc(
-            center: CGPoint(x: rect.maxX * 0.73, y: rect.maxY * 0.5),
-            radius: 170,
+            center: CGPoint(x: rect.maxX * 0.52, y: rect.maxY * 0.518),
+            radius: 15,
             startAngle: .degrees(60),
             delta: .degrees(180)
         )
-        path.move(to: CGPoint(x: rect.maxX * 0.04, y: rect.maxY * 0.89))
+        path.move(to: CGPoint(x: rect.maxX * 0.46, y: rect.maxY * 0.55))
         path.addRelativeArc(
-            center: CGPoint(x: rect.midX, y: rect.maxY * 0.89),
-            radius: 170,
+            center: CGPoint(x: rect.midX, y: rect.maxY * 0.55),
+            radius: 15,
             startAngle: .degrees(180),
             delta: .degrees(180)
         )
-        path.move(to: CGPoint(x: rect.maxX * 0.5, y: rect.maxY * 0.105))
+        path.move(to: CGPoint(x: rect.midX, y: rect.maxY * 0.485))
         path.addRelativeArc(
-            center: CGPoint(x: rect.maxX * 0.27, y: rect.maxY * 0.5),
-            radius: 170,
+            center: CGPoint(x: rect.maxX * 0.48, y: rect.maxY * 0.518),
+            radius: 15,
             startAngle: .degrees(300),
             delta: .degrees(180)
         )
@@ -37,7 +37,7 @@ struct Triquetra: Shape {
     }
 }
 
+
 #Preview {
     CardTabView()
-        .padding()
 }
