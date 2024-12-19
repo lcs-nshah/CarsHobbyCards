@@ -16,41 +16,48 @@ struct CardLayoutView: View {
     var body: some View {
         ZStack {
             Trapezoid()
-            VStack {
-                Triquetra()
-                    .stroke(
-                        Color.yellow,
-                        style: StrokeStyle(
-                            lineWidth: 3,
-                            lineCap: .round,
-                            lineJoin: .round
-                        )
-                    )
-                    .fill(Color.clear)
-                    .aspectRatio(1.0/1.0, contentMode: .fit)
-                    .border(Color.blue)
-                    .padding()
-                    
-                Image(cardToShow.badge)
-                
-                Triquetra()
-                    .stroke(
-                        Color.yellow,
-                        style: StrokeStyle(
-                            lineWidth: 3,
-                            lineCap: .round,
-                            lineJoin: .round
-                        )
-                    )
-                    .fill(Color.clear)
-                    .aspectRatio(1.0/1.0, contentMode: .fit)
-                    .padding()
-                
+            HStack {
+                GeometryReader { geometry in
+                    VStack {
+                        Triquetra()
+                            .stroke(
+                                Color.yellow,
+                                style: StrokeStyle(
+                                    lineWidth: 3,
+                                    lineCap: .round,
+                                    lineJoin: .round
+                                )
+                            )
+                            .fill(Color.clear)
+                            .aspectRatio(1.0/1.0, contentMode: .fit)
+                            .border(Color.blue)
+                            .position(
+                                x: geometry.size.width/25,
+                                y: geometry.size.height/100
+                            )
+                            .padding()
+                        
+                        Spacer()
+                        
+                        Triquetra()
+                            .stroke(
+                                Color.yellow,
+                                style: StrokeStyle(
+                                    lineWidth: 3,
+                                    lineCap: .round,
+                                    lineJoin: .round
+                                )
+                            )
+                            .fill(Color.clear)
+                            .aspectRatio(1.0/1.0, contentMode: .fit)
+                            .position(
+                                x: geometry.size.width/25,
+                                y: geometry.size.height/2.5
+                            )
+                            .padding()
+                    }
+                }
             }
-            
-            
-            
-            
             Text(cardToShow.carName)
         }
         .ignoresSafeArea()

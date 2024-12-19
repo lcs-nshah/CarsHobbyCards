@@ -37,7 +37,6 @@ struct Triquetra: Shape {
     }
 }
 
-
 #Preview {
     CardTabView()
 }
