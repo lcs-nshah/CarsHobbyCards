@@ -9,12 +9,22 @@ import Foundation
 
 struct Card: Identifiable {
     let id = UUID()
-    let name: String
+    let carName: String
+    let badge: String
+    let carPhoto: String
+    let engine: String
+    let horsepower: String
+    let weight: String
+    let accelerationTime: String
+    let topSpeed: String
+    let price: String
+    let numberCreated: String
+    let productionYears: String
     
 }
 
 // Create instances of the structure
-let porsche = Card(name: "porsche")
+let porsche = Card(carName: "porshe", badge: "", carPhoto: "", engine: "", horsepower: "", weight: "", accelerationTime: "", topSpeed: "", price: "", numberCreated: "", productionYears: "")
 
 // Array
 let cards = [

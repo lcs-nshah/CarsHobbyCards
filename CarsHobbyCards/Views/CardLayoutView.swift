@@ -15,7 +15,7 @@ struct CardLayoutView: View {
     // MARK: Computed Property
     var body: some View {
         HStack {
-            Text(cardToShow.name)
+            Text(cardToShow.carName)
         }
     }
 }
