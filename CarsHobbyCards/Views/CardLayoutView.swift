@@ -30,7 +30,6 @@ struct CardLayoutView: View {
                             )
                             .fill(Color.clear)
                             .aspectRatio(1.0/1.0, contentMode: .fit)
-                            .border(Color.blue)
                             .position(
                                 x: geometry.size.width/25,
                                 y: geometry.size.height/100
