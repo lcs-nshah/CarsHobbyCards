@@ -11,7 +11,6 @@ struct CardLayoutView: View {
     
     // MARK: Stored Property
     let cardToShow: Card
-    let imgPaint = ImagePaint(image: Image("McLarenP1Car"))
     
     // MARK: Computed Property
     var body: some View {
@@ -56,14 +55,14 @@ struct CardLayoutView: View {
             
             // Border
             Trapezoid()
-                .fill(.porsche918SpyderLightGray)
+                .fill(cardToShow.primaryColour)
             
             // Triquetras
             GeometryReader { geometry in
                 VStack {
                     Triquetra()
                         .stroke(
-                            Color.porsche918SpyderGreen,
+                            Color(cardToShow.tertiaryColour),
                             style: StrokeStyle(
                                 lineWidth: 3,
                                 lineCap: .round,
@@ -80,7 +79,7 @@ struct CardLayoutView: View {
                     
                     Triquetra()
                         .stroke(
-                            Color.porsche918SpyderGreen,
+                            Color(cardToShow.tertiaryColour),
                             style: StrokeStyle(
                                 lineWidth: 3,
                                 lineCap: .round,
@@ -96,6 +95,18 @@ struct CardLayoutView: View {
                         .padding()
                 }
             }
+            
+            // Badge
+            Image(cardToShow.badge)
+                    .resizable()
+                    .aspectRatio(1.0/1.0, contentMode: .fit)
+                    .padding(.trailing, 270)
+            
+            
+            
+            
+            
+            
             Text(cardToShow.carName)
         }
         .ignoresSafeArea()
