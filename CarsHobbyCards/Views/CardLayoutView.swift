@@ -65,5 +65,5 @@ struct CardLayoutView: View {
 }
 
 #Preview {
-    CardLayoutView(cardToShow: porsche)
+    CardLayoutView(cardToShow: porsche918Spyder)
 }
