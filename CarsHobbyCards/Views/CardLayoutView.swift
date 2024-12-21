@@ -95,9 +95,9 @@ struct CardLayoutView: View {
             
             // Badge
             Image(cardToShow.badge)
-                    .resizable()
-                    .aspectRatio(1.0/1.0, contentMode: .fit)
-                    .padding(.trailing, 270)
+                .resizable()
+                .aspectRatio(1.0/1.0, contentMode: .fit)
+                .padding(.trailing, 270)
             
             // Name
             Image(cardToShow.carName)
@@ -105,7 +105,20 @@ struct CardLayoutView: View {
                 .aspectRatio(contentMode: .fit)
                 .padding(.leading, 150)
                 .padding(.trailing)
-        
+            
+            // Car image
+            GeometryReader { geometry in
+                Image(cardToShow.carPhoto)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .padding(.leading, 90)
+                    .padding(.trailing)
+                    .position(
+                        x: geometry.size.width/2,
+                        y: geometry.size.height/4.5
+                    )
+            }
+            
         }
         .ignoresSafeArea()
         .background(cardToShow.primaryBackgroundColor)
