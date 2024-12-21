@@ -23,11 +23,9 @@ struct CardLayoutView: View {
                         LinearGradient(
                             gradient: Gradient(
                                 stops: [
-                                    .init(color: .black, location: 0),
-                                    .init(
-                                        color: .gray,
-                                        location: 0.33
-                                    )
+                                    .init(color: cardToShow.tertiaryBackgroundColor, location: 0),
+                                    .init(color: cardToShow.secondaryBackgroundColor, location: 0.33),
+                                    .init(color: cardToShow.primaryBackgroundColor, location: 1)
                                 ]
                             ),
                             startPoint: .top,
@@ -40,11 +38,10 @@ struct CardLayoutView: View {
                         LinearGradient(
                             gradient: Gradient(
                                 stops: [
-                                    .init(color: .gray, location: 0.8),
-                                    .init(
-                                        color: .black,
-                                        location: 1.1
-                                    )
+                                    .init(color: cardToShow.primaryBackgroundColor, location: 0),
+                                    .init(color: cardToShow.secondaryBackgroundColor, location: 0.5),
+                                    .init(color: cardToShow.tertiaryBackgroundColor, location: 1),
+                                    .init(color: cardToShow.quaternaryBackgroundColor, location: 1.1)
                                 ]
                             ),
                             startPoint: .top,
@@ -55,14 +52,14 @@ struct CardLayoutView: View {
             
             // Border
             Trapezoid()
-                .fill(cardToShow.primaryColour)
+                .fill(cardToShow.borderColor)
             
             // Triquetras
             GeometryReader { geometry in
                 VStack {
                     Triquetra()
                         .stroke(
-                            Color(cardToShow.tertiaryColour),
+                            Color(cardToShow.triquetraColor),
                             style: StrokeStyle(
                                 lineWidth: 3,
                                 lineCap: .round,
@@ -79,7 +76,7 @@ struct CardLayoutView: View {
                     
                     Triquetra()
                         .stroke(
-                            Color(cardToShow.tertiaryColour),
+                            Color(cardToShow.triquetraColor),
                             style: StrokeStyle(
                                 lineWidth: 3,
                                 lineCap: .round,
@@ -110,6 +107,7 @@ struct CardLayoutView: View {
             Text(cardToShow.carName)
         }
         .ignoresSafeArea()
+        .background(cardToShow.primaryBackgroundColor)
     }
 }
 
