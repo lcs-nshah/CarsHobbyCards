@@ -111,22 +111,22 @@ struct CardLayoutView: View {
                 .padding(.leading, 150)
                 .padding(.trailing)
             
-            // Car image, price, and number
+            // Top half
             GeometryReader { geometry in
-                VStack {
+                VStack (alignment: .trailing) {
                     HStack {
-                        Text(cardToShow.price)
-                            .font(.system(size: 20, weight: .heavy, design: .rounded))
+                        Image(cardToShow.carName)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
                             .padding(.leading, 90)
                         
-                        Spacer()
-                        
+                        // Number of cars
                         Text(cardToShow.numberCreated)
                             .font(.system(size: 18, weight: .medium, design: .monospaced))
                             .padding(.horizontal)
+                            .padding(.vertical, -2)
                     }
-                    .padding(.vertical, -2)
-                    
+                    // Car image
                     Image(cardToShow.carPhoto)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
@@ -135,8 +135,14 @@ struct CardLayoutView: View {
                         .padding(.trailing)
                     
                     HStack {
+                        // Price
+                        Text(cardToShow.price)
+                            .font(.system(size: 20, weight: .heavy, design: .rounded))
+                            .padding(.leading, 120)
+                        
                         Spacer()
                         
+                        // Production years
                         Text(cardToShow.productionYears)
                             .font(.system(size: 18, weight: .medium, design: .rounded))
                             .padding(.horizontal)
@@ -148,7 +154,7 @@ struct CardLayoutView: View {
                 )
             }
             
-            // Statistics
+            // Bottom half
             VStack (alignment: .leading) {
                 Spacer()
                 
@@ -159,7 +165,6 @@ struct CardLayoutView: View {
                     .font(.system(size: 20, weight: .medium, design: .rounded))
                 
                 HStack {
-                    // Horsepower and acceleration time
                     VStack (alignment: .leading) {
                         // Horsepower
                         Text("Horsepower:")
@@ -177,7 +182,6 @@ struct CardLayoutView: View {
                         .padding(.vertical)
                     }
                     
-                    // Weight and top speed
                     VStack (alignment: .leading) {
                         // Weight
                         Text("Weight:")
