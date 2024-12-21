@@ -51,6 +51,10 @@ struct CardLayoutView: View {
             }
             
             // Border
+            Rectangle()
+                .aspectRatio(3.0/1.0, contentMode: .fit)
+                .foregroundStyle(cardToShow.borderColor)
+            
             Trapezoid()
                 .fill(cardToShow.borderColor)
                 .stroke(cardToShow.accentColor, lineWidth: 4)
@@ -121,6 +125,7 @@ struct CardLayoutView: View {
                             .font(.system(size: 18, weight: .medium, design: .monospaced))
                             .padding(.horizontal)
                     }
+                    .padding(.vertical, -2)
                     
                     Image(cardToShow.carPhoto)
                         .resizable()
@@ -133,13 +138,13 @@ struct CardLayoutView: View {
                         Spacer()
                         
                         Text(cardToShow.productionYears)
-                            .font(.system(size: 18, weight: .medium, design: .monospaced))
+                            .font(.system(size: 18, weight: .medium, design: .rounded))
                             .padding(.horizontal)
                     }
                 }
                 .position(
                     x: geometry.size.width/2,
-                    y: geometry.size.height/4.57
+                    y: geometry.size.height/4.5
                 )
             }
             
