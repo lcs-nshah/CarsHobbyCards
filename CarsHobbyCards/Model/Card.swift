@@ -47,37 +47,17 @@ let porsche918Spyder = Card(
     productionYears: "2013-2015",
     borderColor: .porsche918SpyderLightGray,
     accentColor: .porsche918SpyderGreen,
-    primaryBackgroundColor: .gray,
+    primaryBackgroundColor: .porsche918SpyderDarkGray,
     secondaryBackgroundColor: .gray,
     tertiaryBackgroundColor: .porsche918SpyderDarkGray,
     quaternaryBackgroundColor: .porsche918SpyderDarkGray
-)
-
-let ferrariLaFerrari = Card(
-    carName: "FerrariLaFerrariName",
-    badge: "FerrariBadge",
-    carPhoto: "FerrariLaFerrariCar",
-    engine: "6.3L naturally aspirated V12 + 1 electric motor",
-    horsepower: "963 hp",
-    weight: "1,585kg",
-    accelerationTime: "2.6 seconds",
-    topSpeed: "355km/h",
-    price: "$2,045,000",
-    numberCreated: "1 of 499",
-    productionYears: "2013-2016",
-    borderColor: .laFerrariDarkRed,
-    accentColor: .laFerrariYellow,
-    primaryBackgroundColor: .laFerrariLightRed,
-    secondaryBackgroundColor: .mcLarenP1Gray,
-    tertiaryBackgroundColor: .white,
-    quaternaryBackgroundColor: .black
 )
 
 let mcLarenP1 = Card(
     carName: "McLarenP1Name",
     badge: "McLarenBadge",
     carPhoto: "McLarenP1Car",
-    engine: "Twin-turbocharged 3.8L V8 + 1 E-Motor",
+    engine: "Twin-turbocharged 3.8L V8 + 1 electric motor",
     horsepower: "916 hp",
     weight: "1,490kg",
     accelerationTime: "2.8 seconds",
@@ -91,6 +71,26 @@ let mcLarenP1 = Card(
     secondaryBackgroundColor: .mcLarenP1Gray,
     tertiaryBackgroundColor: .mcLarenP1Black,
     quaternaryBackgroundColor: .mcLarenP1Black
+)
+
+let ferrariLaFerrari = Card(
+    carName: "FerrariLaFerrariName",
+    badge: "FerrariBadge",
+    carPhoto: "FerrariLaFerrariCar",
+    engine: "6.3L naturally aspirated V12 + 1 electric motor",
+    horsepower: "949 hp",
+    weight: "1,585kg",
+    accelerationTime: "2.6 seconds",
+    topSpeed: "355km/h",
+    price: "$2,045,000",
+    numberCreated: "1 of 499",
+    productionYears: "2013-2016",
+    borderColor: .laFerrariDarkRed,
+    accentColor: .laFerrariYellow,
+    primaryBackgroundColor: .laFerrariLightRed,
+    secondaryBackgroundColor: .mcLarenP1Gray,
+    tertiaryBackgroundColor: .white,
+    quaternaryBackgroundColor: .black
 )
 
 // Array

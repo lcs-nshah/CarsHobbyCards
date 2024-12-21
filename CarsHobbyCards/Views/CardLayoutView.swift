@@ -149,15 +149,59 @@ struct CardLayoutView: View {
             }
             
             // Statistics
-            VStack {
+            VStack (alignment: .leading) {
+                Spacer()
+                
+                // Engine
+                Text("Engine:")
+                    .font(.system(size: 25, weight: .heavy, design: .rounded))
+                Text(cardToShow.engine)
+                    .font(.system(size: 20, weight: .medium, design: .rounded))
                 
                 HStack {
+                    // Horsepower and acceleration time
+                    VStack (alignment: .leading) {
+                        // Horsepower
+                        Text("Horsepower:")
+                            .font(.system(size: 22, weight: .heavy, design: .rounded))
+                        Text(cardToShow.horsepower)
+                            .font(.system(size: 20, weight: .medium, design: .rounded))
+                        
+                        // Acceleration time
+                        VStack (alignment: .leading) {
+                            Text("0-100km/h:")
+                                .font(.system(size: 22, weight: .heavy, design: .rounded))
+                            Text(cardToShow.accelerationTime)
+                                .font(.system(size: 20, weight: .medium, design: .rounded))
+                        }
+                        .padding(.vertical)
+                    }
+                    
+                    // Weight and top speed
+                    VStack (alignment: .leading) {
+                        // Weight
+                        Text("Weight:")
+                            .font(.system(size: 22, weight: .heavy, design: .rounded))
+                        Text(cardToShow.weight)
+                            .font(.system(size: 20, weight: .medium, design: .rounded))
+                        
+                        // Top speed
+                        VStack (alignment: .leading) {
+                            Text("Top Speed:")
+                                .font(.system(size: 22, weight: .heavy, design: .rounded))
+                            Text(cardToShow.topSpeed)
+                                .font(.system(size: 20, weight: .medium, design: .rounded))
+                        }
+                        .padding(.vertical)
+                    }
+                    .padding(.leading)
                 }
-                HStack{
-                }
+                .padding(.vertical)
                 
+                Spacer()
+                    .aspectRatio(12, contentMode: .fit)
             }
-            
+            .padding(.leading, 90)
         }
         .ignoresSafeArea()
         .background(cardToShow.primaryBackgroundColor)
