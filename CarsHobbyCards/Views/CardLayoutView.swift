@@ -115,10 +115,13 @@ struct CardLayoutView: View {
             GeometryReader { geometry in
                 VStack (alignment: .trailing) {
                     HStack {
-                        Image(cardToShow.carName)
+                        // Country
+                        Image(cardToShow.countryFlag)
                             .resizable()
-                            .aspectRatio(contentMode: .fit)
+                            .aspectRatio(7, contentMode: .fit)
                             .padding(.leading, 90)
+                        
+                        Spacer()
                         
                         // Number of cars
                         Text(cardToShow.numberCreated)
@@ -135,11 +138,6 @@ struct CardLayoutView: View {
                         .padding(.trailing)
                     
                     HStack {
-                        // Price
-                        Text(cardToShow.price)
-                            .font(.system(size: 20, weight: .heavy, design: .rounded))
-                            .padding(.leading, 120)
-                        
                         Spacer()
                         
                         // Production years
@@ -155,16 +153,22 @@ struct CardLayoutView: View {
             }
             
             // Bottom half
-            VStack (alignment: .leading) {
+            VStack (alignment: .center) {
                 Spacer()
                 
                 // Engine
                 Text("Engine:")
                     .font(.system(size: 25, weight: .heavy, design: .rounded))
-                Text(cardToShow.engine)
-                    .font(.system(size: 20, weight: .medium, design: .rounded))
+                VStack (alignment: .leading) {
+                    Text(cardToShow.engine)
+                        .font(.system(size: 20, weight: .medium, design: .rounded))
+                    Text(cardToShow.motor)
+                        .font(.system(size: 20, weight: .medium, design: .rounded))
+                }
+                .padding(.trailing, 35)
                 
                 HStack {
+                    // Left side
                     VStack (alignment: .leading) {
                         // Horsepower
                         Text("Horsepower:")
@@ -180,11 +184,18 @@ struct CardLayoutView: View {
                                 .font(.system(size: 20, weight: .medium, design: .rounded))
                         }
                         .padding(.vertical)
+                        
+                        // Price
+                        Text("Value:")
+                            .font(.system(size: 22, weight: .heavy, design: .rounded))
+                        Text(cardToShow.price)
+                            .font(.system(size: 20, weight: .medium, design: .rounded))
                     }
-                    
+                   
+                    // Right side
                     VStack (alignment: .leading) {
-                        // Weight
-                        Text("Weight:")
+                        // Torque
+                        Text("Torque:")
                             .font(.system(size: 22, weight: .heavy, design: .rounded))
                         Text(cardToShow.weight)
                             .font(.system(size: 20, weight: .medium, design: .rounded))
@@ -197,13 +208,19 @@ struct CardLayoutView: View {
                                 .font(.system(size: 20, weight: .medium, design: .rounded))
                         }
                         .padding(.vertical)
+                        
+                        // Weight
+                            Text("Weight:")
+                                .font(.system(size: 22, weight: .heavy, design: .rounded))
+                            Text(cardToShow.weight)
+                                .font(.system(size: 20, weight: .medium, design: .rounded))
                     }
                     .padding(.leading)
                 }
-                .padding(.vertical)
+                .padding(.vertical, 1)
                 
                 Spacer()
-                    .aspectRatio(12, contentMode: .fit)
+                    .aspectRatio(7, contentMode: .fit)
             }
             .padding(.leading, 90)
         }
@@ -211,6 +228,7 @@ struct CardLayoutView: View {
         .background(cardToShow.primaryBackgroundColor)
     }
 }
+
 
 #Preview {
     CardTabView()

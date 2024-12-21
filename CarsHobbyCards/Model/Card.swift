@@ -14,8 +14,10 @@ struct Card: Identifiable {
     let carName: String
     let badge: String
     let carPhoto: String
+    let countryFlag: String
     // Statistics
     let engine: String
+    let motor: String
     let horsepower: String
     let weight: String
     let accelerationTime: String
@@ -37,7 +39,9 @@ let porsche918Spyder = Card(
     carName: "Porsche918SpyderName",
     badge: "PorscheBadge",
     carPhoto: "Porsche918SpyderCar",
-    engine: "Naturally aspirated 4.6L V8 + 2 electric motors",
+    countryFlag: "GermanyFlag",
+    engine: "Naturally aspirated 4.6L V8",
+    motor: "+ 2 electric motors",
     horsepower: "887 hp",
     weight: "1,674kg",
     accelerationTime: "2.6 seconds",
@@ -57,7 +61,9 @@ let mcLarenP1 = Card(
     carName: "McLarenP1Name",
     badge: "McLarenBadge",
     carPhoto: "McLarenP1Car",
-    engine: "Twin-turbocharged 3.8L V8 + 1 electric motor",
+    countryFlag: "UKFlag",
+    engine: "Twin-turbocharged 3.8L V8",
+    motor: "+ 1 E-Motor",
     horsepower: "916 hp",
     weight: "1,490kg",
     accelerationTime: "2.8 seconds",
@@ -77,7 +83,9 @@ let ferrariLaFerrari = Card(
     carName: "FerrariLaFerrariName",
     badge: "FerrariBadge",
     carPhoto: "FerrariLaFerrariCar",
-    engine: "6.3L naturally aspirated V12 + 1 electric motor",
+    countryFlag: "ItalyFlag",
+    engine: "6.3L naturally aspirated V12",
+    motor: "+ 1 electric motor",
     horsepower: "963 hp",
     weight: "1,585kg",
     accelerationTime: "2.9 seconds",
