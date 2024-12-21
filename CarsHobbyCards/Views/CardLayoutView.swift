@@ -99,12 +99,13 @@ struct CardLayoutView: View {
                     .aspectRatio(1.0/1.0, contentMode: .fit)
                     .padding(.trailing, 270)
             
-            
-            
-            
-            
-            
-            Text(cardToShow.carName)
+            // Name
+            Image(cardToShow.carName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .padding(.leading, 150)
+                .padding(.trailing)
+        
         }
         .ignoresSafeArea()
         .background(cardToShow.primaryBackgroundColor)
@@ -112,5 +113,5 @@ struct CardLayoutView: View {
 }
 
 #Preview {
-    CardLayoutView(cardToShow: porsche918Spyder)
+    CardTabView()
 }
