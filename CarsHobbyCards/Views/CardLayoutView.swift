@@ -53,13 +53,14 @@ struct CardLayoutView: View {
             // Border
             Trapezoid()
                 .fill(cardToShow.borderColor)
+                .stroke(cardToShow.accentColor, lineWidth: 4)
             
             // Triquetras
             GeometryReader { geometry in
                 VStack {
                     Triquetra()
                         .stroke(
-                            Color(cardToShow.triquetraColor),
+                            Color(cardToShow.accentColor),
                             style: StrokeStyle(
                                 lineWidth: 3,
                                 lineCap: .round,
@@ -76,7 +77,7 @@ struct CardLayoutView: View {
                     
                     Triquetra()
                         .stroke(
-                            Color(cardToShow.triquetraColor),
+                            Color(cardToShow.accentColor),
                             style: StrokeStyle(
                                 lineWidth: 3,
                                 lineCap: .round,
@@ -106,17 +107,50 @@ struct CardLayoutView: View {
                 .padding(.leading, 150)
                 .padding(.trailing)
             
-            // Car image
+            // Car image, price, and number
             GeometryReader { geometry in
-                Image(cardToShow.carPhoto)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .padding(.leading, 90)
-                    .padding(.trailing)
-                    .position(
-                        x: geometry.size.width/2,
-                        y: geometry.size.height/4.5
-                    )
+                VStack {
+                    HStack {
+                        Text(cardToShow.price)
+                            .font(.system(size: 20, weight: .heavy, design: .rounded))
+                            .padding(.leading, 90)
+                        
+                        Spacer()
+                        
+                        Text(cardToShow.numberCreated)
+                            .font(.system(size: 18, weight: .medium, design: .monospaced))
+                            .padding(.horizontal)
+                    }
+                    
+                    Image(cardToShow.carPhoto)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .border(cardToShow.accentColor, width: 4)
+                        .padding(.leading, 90)
+                        .padding(.trailing)
+                    
+                    HStack {
+                        Spacer()
+                        
+                        Text(cardToShow.productionYears)
+                            .font(.system(size: 18, weight: .medium, design: .monospaced))
+                            .padding(.horizontal)
+                    }
+                }
+                .position(
+                    x: geometry.size.width/2,
+                    y: geometry.size.height/4.57
+                )
+            }
+            
+            // Statistics
+            VStack {
+                
+                HStack {
+                }
+                HStack{
+                }
+                
             }
             
         }

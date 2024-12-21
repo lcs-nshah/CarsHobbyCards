@@ -25,7 +25,7 @@ struct Card: Identifiable {
     let productionYears: String
     // Colours
     let borderColor: Color
-    let triquetraColor: Color
+    let accentColor: Color
     let primaryBackgroundColor: Color
     let secondaryBackgroundColor: Color
     let tertiaryBackgroundColor: Color
@@ -43,10 +43,10 @@ let porsche918Spyder = Card(
     accelerationTime: "2.6 seconds",
     topSpeed: "345km/h",
     price: "$1,150,000",
-    numberCreated: "918",
+    numberCreated: "1 of 918",
     productionYears: "2013-2015",
     borderColor: .porsche918SpyderLightGray,
-    triquetraColor: .porsche918SpyderGreen,
+    accentColor: .porsche918SpyderGreen,
     primaryBackgroundColor: .gray,
     secondaryBackgroundColor: .gray,
     tertiaryBackgroundColor: .porsche918SpyderDarkGray,
@@ -63,10 +63,10 @@ let ferrariLaFerrari = Card(
     accelerationTime: "2.6 seconds",
     topSpeed: "355km/h",
     price: "$2,045,000",
-    numberCreated: "499",
+    numberCreated: "1 of 499",
     productionYears: "2013-2016",
     borderColor: .laFerrariDarkRed,
-    triquetraColor: .laFerrariYellow,
+    accentColor: .laFerrariYellow,
     primaryBackgroundColor: .laFerrariLightRed,
     secondaryBackgroundColor: .mcLarenP1Gray,
     tertiaryBackgroundColor: .white,
@@ -83,10 +83,10 @@ let mcLarenP1 = Card(
     accelerationTime: "2.8 seconds",
     topSpeed: "350km/h",
     price: "$1,945,000",
-    numberCreated: "375",
+    numberCreated: "1 of 375",
     productionYears: "2013-2015",
     borderColor: .mcLarenP1Orange,
-    triquetraColor: .mcLarenP1Black,
+    accentColor: .mcLarenP1Black,
     primaryBackgroundColor: .mcLarenP1LightOrange,
     secondaryBackgroundColor: .mcLarenP1Gray,
     tertiaryBackgroundColor: .mcLarenP1Black,
