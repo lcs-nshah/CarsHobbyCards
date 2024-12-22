@@ -191,13 +191,13 @@ struct CardLayoutView: View {
                         Text(cardToShow.price)
                             .font(.system(size: 20, weight: .medium, design: .rounded))
                     }
-                   
+                    
                     // Right side
                     VStack (alignment: .leading) {
                         // Torque
                         Text("Torque:")
                             .font(.system(size: 22, weight: .heavy, design: .rounded))
-                        Text(cardToShow.weight)
+                        Text(cardToShow.torque)
                             .font(.system(size: 20, weight: .medium, design: .rounded))
                         
                         // Top speed
@@ -210,10 +210,10 @@ struct CardLayoutView: View {
                         .padding(.vertical)
                         
                         // Weight
-                            Text("Weight:")
-                                .font(.system(size: 22, weight: .heavy, design: .rounded))
-                            Text(cardToShow.weight)
-                                .font(.system(size: 20, weight: .medium, design: .rounded))
+                        Text("Weight:")
+                            .font(.system(size: 22, weight: .heavy, design: .rounded))
+                        Text(cardToShow.weight)
+                            .font(.system(size: 20, weight: .medium, design: .rounded))
                     }
                     .padding(.leading)
                 }
@@ -228,7 +228,6 @@ struct CardLayoutView: View {
         .background(cardToShow.primaryBackgroundColor)
     }
 }
-
 
 #Preview {
     CardTabView()

@@ -19,6 +19,7 @@ struct Card: Identifiable {
     let engine: String
     let motor: String
     let horsepower: String
+    let torque: String
     let weight: String
     let accelerationTime: String
     let topSpeed: String
@@ -43,6 +44,7 @@ let porsche918Spyder = Card(
     engine: "Naturally aspirated 4.6L V8",
     motor: "+ 2 electric motors",
     horsepower: "887 hp",
+    torque: "1280 Nm",
     weight: "1,674kg",
     accelerationTime: "2.6 seconds",
     topSpeed: "345km/h",
@@ -65,6 +67,7 @@ let mcLarenP1 = Card(
     engine: "Twin-turbocharged 3.8L V8",
     motor: "+ 1 E-Motor",
     horsepower: "916 hp",
+    torque: "900 Nm",
     weight: "1,490kg",
     accelerationTime: "2.8 seconds",
     topSpeed: "350km/h",
@@ -87,6 +90,7 @@ let ferrariLaFerrari = Card(
     engine: "6.3L naturally aspirated V12",
     motor: "+ 1 electric motor",
     horsepower: "963 hp",
+    torque: "900 Nm",
     weight: "1,585kg",
     accelerationTime: "2.9 seconds",
     topSpeed: "355km/h",
